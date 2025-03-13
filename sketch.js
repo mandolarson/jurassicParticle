@@ -4,8 +4,8 @@ let trex;
 
 // Load the emergency flare image and Trex image
 function preload() {
-  trex = loadImage('/tRex.png');
-  img = loadImage('/emergencyFlare.png');
+  trex = loadImage('/assets/tRex.png');
+  img = loadImage('/assets/emergencyFlare.png');
 }
 
 function setup() {
@@ -17,7 +17,7 @@ function draw() {
   background(0, 50); // Slightly transparent background for trailing effect
   // Draw the trex
   image(trex, width/11, height/3, 350, 309);
-  cursor('/emergencyFlare.png');
+  cursor('/assets/emergencyFlare.png');
   if (mouseIsPressed) {
     sparks.push(new Spark(mouseX, mouseY)); // Emit new particles
   }
